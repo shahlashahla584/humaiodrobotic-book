@@ -1,0 +1,71 @@
+/* =============================== */
+/* MULTICOLOR URDU TRANSLATE BUTTON */
+/* =============================== */
+
+.urdu-translation-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+/* MAIN BUTTON */
+.urdu-translation-container button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  color: #020617;
+  background: linear-gradient(
+    135deg,
+    #8b5cf6,   /* purple */
+    #ec4899,   /* pink */
+    #22d3ee    /* cyan */
+  );
+  box-shadow:
+    0 0 18px rgba(139, 92, 246, 0.45),
+    0 0 30px rgba(34, 211, 238, 0.35);
+  transition: all 0.25s ease;
+}
+
+/* HOVER */
+.urdu-translation-container button:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow:
+    0 0 26px rgba(236, 72, 153, 0.65),
+    0 0 44px rgba(34, 211, 238, 0.55);
+}
+
+/* ACTIVE URDU MODE */
+.urdu-translation-container button.urdu-mode {
+  background: linear-gradient(
+    135deg,
+    #22c55e,   /* green */
+    #22d3ee,   /* cyan */
+    #6366f1    /* indigo */
+  );
+  color: #020617;
+  box-shadow:
+    0 0 22px rgba(34, 197, 94, 0.6),
+    0 0 36px rgba(34, 211, 238, 0.55);
+}
+
+/* DISABLED */
+.urdu-translation-container button:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+/* SPINNER ANIMATION */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

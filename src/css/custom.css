@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =============================== */
+/* ROOT – MULTICOLOR AI PALETTE */
+/* =============================== */
+
+:root {
+  /* Core Gradient Colors */
+  --ai-purple: #8b5cf6;
+  --ai-pink: #ec4899;
+  --ai-cyan: #22d3ee;
+  --ai-blue: #3b82f6;
+  --ai-green: #22c55e;
+  --ai-gold: #facc15;
+
+  /* Primary (used by Docusaurus) */
+  --ifm-color-primary: var(--ai-purple);
+  --ifm-color-primary-dark: #6d28d9;
+  --ifm-color-primary-darker: #5b21b6;
+  --ifm-color-primary-darkest: #4c1d95;
+  --ifm-color-primary-light: #c4b5fd;
+  --ifm-color-primary-lighter: #ddd6fe;
+  --ifm-color-primary-lightest: #ede9fe;
+
+  /* Background */
+  --ifm-background-color: #05050a;
+  --ifm-color-background: #05050a;
+  --ifm-color-background-secondary: #0b0b14;
+  --ifm-color-surface: #111827;
+
+  /* Text */
+  --ifm-color-content: #e5e7eb;
+  --ifm-color-content-secondary: #9ca3af;
+
+  /* Links */
+  --ifm-color-link: var(--ai-cyan);
+  --ifm-color-link-hover: var(--ai-pink);
+
+  /* Code */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(139, 92, 246, 0.18);
+}
+
+/* =============================== */
+/* DARK MODE (ENFORCED) */
+/* =============================== */
+
+[data-theme="dark"] {
+  --ifm-color-primary: var(--ai-cyan);
+  --ifm-color-link: var(--ai-cyan);
+  --ifm-color-link-hover: var(--ai-pink);
+}
+
+/* =============================== */
+/* GLOBAL MULTICOLOR EFFECTS */
+/* =============================== */
+
+a,
+.button {
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-shadow: 0 0 12px rgba(236, 72, 153, 0.6);
+}
+
+/* =============================== */
+/* PRIMARY BUTTON – MULTICOLOR */
+/* =============================== */
+
+.button.button--primary {
+  background: linear-gradient(
+    135deg,
+    var(--ai-purple),
+    var(--ai-pink),
+    var(--ai-cyan)
+  );
+  color: #000;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 8px 28px rgba(139, 92, 246, 0.35);
+}
+
+.button.button--primary:hover {
+  background: linear-gradient(
+    135deg,
+    var(--ai-cyan),
+    var(--ai-pink),
+    var(--ai-purple)
+  );
+  box-shadow: 0 10px 40px rgba(236, 72, 153, 0.55);
+  transform: translateY(-2px);
+}
+
+/* =============================== */
+/* CODE BLOCKS – AI GLOW */
+/* =============================== */
+
+.highlight pre,
+code {
+  background: #020617;
+  color: #e0e7ff;
+  border-left: 4px solid var(--ai-cyan);
+}
+
+.highlight pre:hover {
+  box-shadow: 0 0 18px rgba(34, 211, 238, 0.45);
+}
+
+/* =============================== */
+/* NAVBAR – MULTICOLOR GLASS */
+/* =============================== */
+
+.navbar {
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 0.75),
+    rgba(34, 211, 238, 0.75),
+    rgba(236, 72, 153, 0.75)
+  );
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navbar__link {
+  color: #020617 !important;
+  font-weight: 600;
+}
+
+.navbar__link:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+}
+
+/* =============================== */
+/* AUTH BUTTON – BLACK + NEON */
+/* =============================== */
+
+.auth-login-btn,
+.auth-logout-btn {
+  padding: 6px 18px;
+  border-radius: 999px;
+  background: #000;
+  color: var(--ai-cyan);
+  font-weight: 700;
+  border: 1px solid #000;
+  box-shadow: 0 0 18px rgba(34, 211, 238, 0.45);
+  transition: all 0.25s ease;
+}
+
+.auth-login-btn:hover,
+.auth-logout-btn:hover {
+  color: var(--ai-pink);
+  box-shadow: 0 0 26px rgba(236, 72, 153, 0.6);
+  transform: translateY(-1px);
+}
+
+/* =============================== */
+/* CARDS – GLASS + GRADIENT EDGE */
+/* =============================== */
+
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(17, 24, 39, 0.85),
+    rgba(2, 6, 23, 0.9)
+  );
+  border-radius: 14px;
+  border: 1px solid rgba(139, 92, 246, 0.35);
+}
+
+.card:hover {
+  box-shadow: 0 0 22px rgba(139, 92, 246, 0.45);
+}
+
+/* =============================== */
+/* HERO TEXT – MULTICOLOR GLOW */
+/* =============================== */
+
+.hero__title {
+  background: linear-gradient(
+    90deg,
+    var(--ai-purple),
+    var(--ai-cyan),
+    var(--ai-pink)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =============================== */
+/* RTL SUPPORT (UNCHANGED) */
+/* =============================== */
+
+:root[dir="rtl"] {
+  direction: rtl;
+}
+
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] .markdown pre,
+html[dir="rtl"] .markdown code {
+  direction: ltr;
+  text-align: left;
+}

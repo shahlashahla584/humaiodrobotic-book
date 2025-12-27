@@ -1,0 +1,77 @@
+.section {
+  padding: 4rem 0;
+  background: linear-gradient(180deg, #0b0b1a, #050008);
+}
+
+/* Card */
+.card {
+  height: 100%;
+  padding: 2.2rem 1.8rem;
+  border-radius: 18px;
+  background: linear-gradient(
+    160deg,
+    rgba(34, 211, 238, 0.12),
+    rgba(123, 92, 255, 0.12),
+    rgba(255, 78, 205, 0.12)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  transition: all 0.35s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7);
+}
+
+/* Icon */
+.iconWrapper {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1.2rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #22d3ee,
+    #7b5cff,
+    #ff4ecd
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 25px rgba(123, 92, 255, 0.6);
+}
+
+.icon {
+  font-size: 30px;
+  color: #fff;
+}
+
+/* Title */
+.title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  background: linear-gradient(
+    90deg,
+    #22d3ee,
+    #7b5cff,
+    #ff4ecd
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Description */
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+/* Dark mode support */
+[data-theme="dark"] .section {
+  background: linear-gradient(180deg, #050008, #000);
+}
