@@ -253,7 +253,7 @@ const config: Config = {
           label: 'Book',
         },
         {
-          href: 'https://github.com/ZARMAIN-AHMED/Physical-AI---Humanoid-Robotics-Course',
+          href: 'https://github.com/shahlashahla584/humaiodrobotic-book',
           label: 'GitHub',
           position: 'right',
         },
@@ -282,7 +282,7 @@ const config: Config = {
             {
               label: 'GitHub',
               href:
-                'https://github.com/ZARMAIN-AHMED/Physical-AI---Humanoid-Robotics-Course',
+                'https://github.com/shahlashahla584/humaiodrobotic-book',
             },
           ],
         },
